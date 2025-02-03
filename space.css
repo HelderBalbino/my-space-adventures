@@ -125,6 +125,9 @@ nav {
 /* main */
 
 /* rows */
+.row {
+	margin: 50px 0;
+}
 
 /* columns */
 
@@ -149,4 +152,55 @@ footer {
 
 .footer-nav-link:hover {
 	color: #ff0;
+}
+
+/* Responsive styles */
+@media (min-width: 900px) {
+	/* responsive styles go here */
+}
+
+@media (min-width: 900px) {
+	.header-logo {
+		font-size: 80px;
+		padding: 150px 25px;
+	}
+}
+
+@media (min-width: 900px) {
+	.main-nav-link {
+		font-size: 32px;
+	}
+}
+
+@media (min-width: 900px) {
+	footer {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 900px) {
+	.row {
+		display: flex;
+	}
+}
+
+@media (min-width: 900px) {
+	.row-reversed {
+		flex-direction: row-reverse;
+	}
+}
+
+@media (min-width: 900px) {
+	.column {
+		margin: 0 25px;
+		flex: 1;
+	}
+}
+
+.column-size-double {
+	flex: 2;
 }
