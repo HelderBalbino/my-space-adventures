@@ -129,3 +129,24 @@ nav {
 /* columns */
 
 /* footer */
+footer {
+	padding: 10px 25px;
+}
+
+.footer-nav {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+.footer-nav-link {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding-left: 25px;
+	transition: all 0.5s;
+}
+
+.footer-nav-link:hover {
+	color: #ff0;
+}
