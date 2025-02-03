@@ -3,6 +3,13 @@
 	box-sizing: border-box;
 }
 body {
+	background-image: url(./images/stars.jpg);
+	background-size: contain;
+	color: #fff;
+	margin: 0;
+	background-size: contain;
+	color: #fff;
+	margin: 0;
 	font-family: 'Montserrat Alternates', sans-serif;
 }
 
