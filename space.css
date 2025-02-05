@@ -1,5 +1,4 @@
 /* global */
-
 * {
 	box-sizing: border-box;
 }
@@ -9,16 +8,18 @@ html {
 }
 
 body {
-	background: url(https://cdn.glitch.global/20e54f54-5cf2-4ee9-86c8-543047df22c6/stars.jpg?v=1711365306901);
-	background-size: contain;
-	background-attachment: fixed;
-	color: #fff;
 	font-family: 'Montserrat Alternates', sans-serif;
+	background: url(./images/stars.jpg);
+	background-size: contain;
+	color: #fff;
 	margin: 0;
+	background-attachment: fixed;
 }
 
+h1 {
+	font-family: 'Rubik Moonrocks', cursive;
+}
 /* text */
-
 h2 {
 	margin-top: 0;
 }
@@ -27,15 +28,12 @@ p {
 	font-size: 16px;
 	line-height: 24px;
 }
-
 /* media */
-
 img {
 	width: 100%;
 }
 
 /* tables */
-
 table {
 	border: 2px solid rgba(255 255 255 / 0.4);
 	border-collapse: collapse;
@@ -52,9 +50,7 @@ td {
 td:nth-child(odd) {
 	background: rgba(255 255 255 / 0.1);
 }
-
 /* forms */
-
 .input {
 	margin-bottom: 30px;
 }
@@ -86,9 +82,8 @@ button:hover {
 }
 
 /* header */
-
 header {
-	background: url(https://cdn.glitch.global/20e54f54-5cf2-4ee9-86c8-543047df22c6/earth.jpg?v=1711365305134);
+	background: url(./images/earth.jpg);
 	background-size: cover;
 	background-position: center top;
 }
@@ -101,20 +96,7 @@ header {
 	margin: 0;
 }
 
-@media (min-width: 900px) {
-	.header-logo {
-		font-size: 80px;
-		padding: 150px 25px;
-	}
-}
-
 /* nav */
-
-nav {
-	position: sticky;
-	top: 0;
-}
-
 .main-nav {
 	background: #f00;
 	display: flex;
@@ -123,7 +105,6 @@ nav {
 	margin: 0;
 	padding: 0;
 }
-
 .main-nav-link {
 	display: block;
 	color: #fff;
@@ -133,92 +114,26 @@ nav {
 	transition: all 0.5s;
 }
 
-@media (min-width: 900px) {
-	.main-nav-link {
-		font-size: 32px;
-	}
-}
-
 .main-nav-link:hover {
 	color: #ff0;
 }
 
+nav {
+	position: sticky;
+	top: 0;
+}
 /* main */
 
-@media (min-width: 900px) {
-	main {
-		max-width: 1200px;
-		margin: 0 auto;
-	}
-}
-
-/* rows and columns */
-
+/* rows */
 .row {
 	margin: 50px 0;
 }
 
-@media (min-width: 900px) {
-	.row {
-		display: flex;
-	}
-	.row-reversed {
-		flex-direction: row-reverse;
-	}
-}
-
-@media (min-width: 900px) {
-	.column {
-		margin: 0 25px;
-		flex: 1;
-	}
-}
-
-/* column type - content */
-
-.column-with-text {
-	padding: 50px;
-}
-
-.column-with-media {
-	padding: 0 50px;
-}
-
-.column-with-table {
-	overflow: auto;
-}
-
-/* column type - sizes */
-
-.column-size-double {
-	flex: 2;
-}
-
-/* column type - backgrounds */
-
-.column-background-transparent {
-	background: rgba(255 255 255 / 0.2);
-}
-
-.column-background-white {
-	background: #fff;
-	color: #000;
-}
+/* columns */
 
 /* footer */
-
 footer {
 	padding: 10px 25px;
-}
-
-@media (min-width: 900px) {
-	footer {
-		max-width: 1200px;
-		margin: 0 auto;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
 }
 
 .footer-nav {
@@ -237,4 +152,55 @@ footer {
 
 .footer-nav-link:hover {
 	color: #ff0;
+}
+
+/* Responsive styles */
+@media (min-width: 900px) {
+	/* responsive styles go here */
+}
+
+@media (min-width: 900px) {
+	.header-logo {
+		font-size: 80px;
+		padding: 150px 25px;
+	}
+}
+
+@media (min-width: 900px) {
+	.main-nav-link {
+		font-size: 32px;
+	}
+}
+
+@media (min-width: 900px) {
+	footer {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 900px) {
+	.row {
+		display: flex;
+	}
+}
+
+@media (min-width: 900px) {
+	.row-reversed {
+		flex-direction: row-reverse;
+	}
+}
+
+@media (min-width: 900px) {
+	.column {
+		margin: 0 25px;
+		flex: 1;
+	}
+}
+
+.column-size-double {
+	flex: 2;
 }
